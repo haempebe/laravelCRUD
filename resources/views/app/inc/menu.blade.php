@@ -42,7 +42,8 @@
                             </span>
                         </a>
                     </li>
-                    <li class="nav-item dropdown {{ request()->routeIs('category', 'author', 'borrowing') ? 'active' : '' }}">
+                    <li
+                        class="nav-item dropdown {{ request()->routeIs('category', 'author', 'borrowing') ? 'active' : '' }}">
                         <a class="nav-link dropdown-toggle" href="#navbar-help" data-bs-toggle="dropdown"
                             data-bs-auto-close="outside" role="button" aria-expanded="false">
                             <span class="nav-link-title">
@@ -59,7 +60,6 @@
                             <a class="dropdown-item" href="{{ route('borrowing') }}" rel="noopener">
                                 Peminjaman
                             </a>
-
                         </div>
                     </li>
                 </ul>
